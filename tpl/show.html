@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="css/show.css">
+<div class="header">
+	<span >
+		<a onclick="window.history.go(-1)"  class="iconfont">&#xe677;</a>
+	</span>
+	<span>
+		<span>
+			<a href="" class="iconfont">&#xe601;</a>
+		</span>
+		<span>
+			<a href="" class="iconfont">&#xe621;</a>
+		</span>
+		<span>
+			<span>
+				<a href="" class="iconfont">&#xe64f;</a>
+			</span>
+			<i>{{data2.comments}}</i>
+		</span>
+		<span>
+			<a href="" class="iconfont">&#xe708;</a>
+			<i>{{data2.popularity}}</i>
+		</span>
+	</span>
+</div>
+<link rel="stylesheet" ng-href="{{data.css[0]}}">
+<style>
+	.img-place-holder{
+		background: url({{data.image}}) no-repeat center center/cover;
+	}
+</style>
+<article ng-bind-html="data['body']" style="margin-top:1.1rem;float:left">
+
+</article>

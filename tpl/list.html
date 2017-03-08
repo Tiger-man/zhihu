@@ -1,0 +1,104 @@
+
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 整体大盒子 -->
+	<div class="mask" ng-touchstart="move($event)" ng-touchmove="go($event)"></div>
+	<section class="viewBox">
+		<section class="bigBox">
+			<div class="bigNavLeft">
+				<div class="navLeft">
+					<div class="use-infor">
+						<div class="use-pho">
+							<div class="use-pic">
+							</div>
+							<span>随风而去</span>
+						</div>
+						<div class="use-funct">
+							<div class="mystore">
+								我的藏
+							</div>
+							<div class="download">
+								离线下载
+							</div>
+						</div>
+					</div>
+					<div class="navBottom" ng-controller="head">
+						<span>
+							<i class="iconfont">&#xe600;</i>
+							<a href="#!/">首页</a>
+						</span>
+						<span ng-repeat="v in data">
+							<a href="#!/list/{{v.id}}">{{v.name}}</a>
+						</span>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="viewCont">
+				<div class="viewCont_top">
+					<div class="left">
+						<span>
+							<i id="button" class="iconfont" ng-touchstart="click($event)">&#xe675;</i>
+						</span>
+						<span>
+							{{data.data.name}}
+						</span>
+					</div>
+					<div class="right">
+						<span>
+							<i class="iconfont">&#xe6c7;</i>							
+						</span>
+						<span>
+							<i class="iconfont">&#xe676;</i>							
+						</span>
+					</div>
+				</div>
+				<div class="viewShow">
+				
+					<div class="banner">
+						<div class="swiper-container swiper-container-horizontal" id="swBox">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="height:4.5rem">
+									<img src="">
+									<span class="bannerTitle">今天天气五</span>
+								</div>
+								<div class="swiper-slide" style="height:4.5rem">
+									<img src="">
+									<span class="bannerTitle">今天天气五</span>
+								</div>
+								<div class="swiper-slide" style="height:4.5rem">
+									<img src="">
+									<span class="bannerTitle">今天天气五</span>
+								</div>
+								<div class="swiper-slide" style="height:4.5rem">
+									<img src="">
+									<span class="bannerTitle">今天天气五</span>
+								</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination swiper-pagination-clickable">
+								<span class="swiper-pagination-bullet"></span>
+								<span class="swiper-pagination-bullet"></span>
+								<span class="swiper-pagination-bullet">
+								</span><span class="swiper-pagination-bullet"></span>
+							</div>
+						</div>
+					</div>
+					<div class="contentBox">
+						<h2 class="newsTitle">最新消息</h2>
+						<div class="newContet">
+							<div class="newContentOne" ng-repeat="v in data.data.stories">
+								<p class="descript">
+									<a href="#!/show/{{v.id}}">{{v.title}}</a>
+								</p>
+								<div class="imgBox">
+									<div style="width:100%;height:100%;background:url({{v.images[0]}}) no-repeat center center/contain"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+<script src="js/index.js"></script>

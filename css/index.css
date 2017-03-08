@@ -1,0 +1,232 @@
+.viewBox{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.viewBox .bigBox{
+	height:100%;
+	width:200%;
+	transform :translateX(-6.08rem);
+}
+.bigNavLeft{
+	width:6.07rem;
+	height:100%;
+	float:left;
+}
+.viewBox .bigBox .navLeft{
+	width:6.07rem;
+	height:100%;
+	display: flex;
+	flex-direction:column;
+}
+.viewBox .bigBox .navLeft .use-infor{
+	width:100%;
+	height:2.2rem;
+	background: #00A2ED;
+	flex-grow:0;
+	flex-shrink:0;
+}
+.viewBox .bigBox .navLeft .use-infor .use-pho{
+	height:1.2rem;
+	display: flex;
+	align-items:center;
+	padding:0 0.32rem;
+	box-sizing:border-box;  
+}
+.viewBox .bigBox .navLeft .use-infor .use-pho .use-pic{
+	width:0.65rem;
+	height:0.65rem;
+	background: #E9E9E9;
+	border-radius: 50%;
+	margin-right: 0.25rem;
+}
+.viewBox .bigBox .navLeft .use-infor .use-pho span{
+	color:#FFFFFF;
+	font-size: 14px;
+}
+.viewBox .bigBox .navLeft .use-infor .use-funct{
+	height:1.0rem;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	color: #fff;
+}
+.viewBox .bigBox .navLeft .use-infor .use-funct .mystore{
+	width:50%;
+	font-size: 14px;
+	display: flex;
+	justify-content:center;
+	background: url(../images/五角星.png) no-repeat 0.5rem center;
+	background-size:0.32rem 0.32rem;
+	height:1rem;
+	line-height: 1rem;
+}
+.viewBox .bigBox .navLeft .use-infor .use-funct .download{
+	width:50%;
+	font-size: 14px;
+	display: flex;
+	justify-content:center;
+	background: url(../images/五角星.png) no-repeat 0.5rem center;
+	background-size:0.32rem 0.32rem;
+	height:1rem;
+	line-height: 1rem;
+}
+.viewBox .bigBox .navLeft .navBottom{
+	flex-grow:1;
+	width:100%;
+	overflow: auto;
+}
+.viewBox .bigBox .navLeft .navBottom>span{
+	display: block;
+	height:1rem;
+	line-height: 1rem;
+	font-size: 0;
+}
+.viewBox .bigBox .navLeft .navBottom>span:nth-child(1){
+	background: #F0F0F0;
+}
+.viewBox .bigBox .navLeft .navBottom>span:nth-child(1) a{
+	font-weight: 600;
+	color:#11A7EB;
+	font-size: 14px;
+}
+.viewBox .bigBox .navLeft .navBottom>span:nth-child(1)>i{
+	font-style: normal;
+	color:#11A7EB;
+	margin-left: 0.46rem;
+	font-size: 14px;
+	margin-right: 0.3rem;
+}
+.viewBox .bigBox .navLeft .navBottom>span:nth-child(1)~span{
+	background: #FFF;
+}
+.viewBox .bigBox .navLeft .navBottom>span:nth-child(1)~span>a{
+	color:#0B0B0B;
+	font-size: 14px;
+	line-height: 1rem;
+	margin-left: 0.4rem;
+}
+.mask{
+	position: fixed;
+	width:1.13rem;
+	right:0;
+	top:0;
+	height:100%;
+	background: rgba(0,0,0,.6);
+	z-index: 100;
+	transition:all 0.01s;
+	display: none;
+}
+
+.viewBox .bigBox .viewCont{
+	float: left;
+	height:100%;
+	display: flex;
+	flex-direction:column;
+	width:7.2rem;
+}
+.viewBox .bigBox .viewCont .viewCont_top{
+	height:1.1rem;
+	background: #00A2ED;
+	display: flex;
+	justify-content:space-between;
+	width:100%;
+	align-items:center;
+	box-sizing:border-box;
+	padding:0 0.35rem;
+	flex-grow:0;
+	flex-shrink:0;
+}
+.viewShow{
+	flex-grow:1;
+	overflow: auto;
+}
+.viewBox .bigBox .viewCont .viewCont_top .left{
+	font-size: 14px;
+	color:#FFF;
+	display: flex;
+	align-items:center;
+}
+.viewBox .bigBox .viewCont .viewCont_top .right{
+	font-size: 14px;
+	color:#FFF;
+	display: flex;
+	align-items:center;
+}
+.viewBox .bigBox .viewCont .viewCont_top .left span:nth-child(2){
+	margin-left: 0.66rem;
+}
+.viewBox .bigBox .viewCont .viewCont_top .right span:nth-child(1){
+	margin-right: 0.66rem;
+}
+.viewBox .bigBox .banner{
+	width:100%;
+	height:4.5rem;
+	background: black;
+	/*margin-top: 1.1rem;*/
+}
+.viewBox .bigBox .banner .bannerTitle{
+	position: absolute;
+	width:100%;
+	box-sizing:border-box;
+	padding:0 0.3rem;
+	bottom:0.5rem;
+	color:#FFF;
+	font-size: 16px;
+}
+.viewBox .bigBox .contentBox{
+	width:100%;
+	height:auto;
+	background: #F3F3F3;
+	border:1px solid transparent;
+	box-sizing:border-box;
+}
+.viewBox .bigBox .contentBox .newsTitle{
+	color:#757575;
+	font-size: 12px;
+	margin:0.30rem 0 0.4rem 0.3rem;
+}
+.viewBox .bigBox .contentBox .newContet{
+	width:100%;
+	box-sizing:border-box;
+	padding:0 0.15rem;
+}
+.viewBox .bigBox .contentBox .newContet .newContentOne{
+	width:100%;
+	box-shadow: 0 0 3px 2px #E6E6E6;
+	background: #FFF;
+	border-radius: 5px;
+	height:1.98rem;
+	margin-bottom: 0.2rem;
+}
+.viewBox .bigBox .contentBox .newContet .newContentOne .descript{
+	float:left;
+	width:75%;
+	box-sizing:border-box;
+	height:100%;
+	font-size: 14px;
+	color:#777777;
+	padding:0.3rem 0.4rem 0 0.3rem;
+}
+.viewBox .bigBox .contentBox .newContet .newContentOne .descript a{
+	color:#787878;
+}
+.viewBox .bigBox .contentBox .newContet .newContentOne .imgBox{
+	float:left;
+	width:25%;
+	height:100%;
+	box-sizing:border-box;
+	padding:0.25rem 0.4rem 0.25rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

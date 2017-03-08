@@ -1,0 +1,57 @@
+.header{
+	height:1.1rem;
+	background: #00A2ED;
+	overflow: hidden;
+	position: fixed;
+	width:100%;
+}
+.header>span:nth-child(1){
+	margin-left:0.35rem;
+	float:left;
+	line-height: 1.03rem;
+	text-align: center;
+	font-size: 0;
+}
+.header>span:nth-child(1) a{
+	font-size: 20px;
+	color:#FFF;
+	text-align: center;
+}
+.header>span:nth-child(2){
+	float:right;
+	margin-right: 0.28rem;
+	line-height: 1.03rem;
+	text-align: center;
+	font-size: 0;
+}
+.header>span:nth-child(2) a{
+	font-size: 20px;
+	color:#FFF;
+	text-align: center;
+
+}
+.header>span:nth-child(2)>span{
+	margin-left:0.6rem;
+	float:left;
+}
+.header>span:nth-child(2)>span:nth-child(3) a{
+	/*line-height: 1.2rem;*/
+	padding-top:0.05rem;
+	margin-right: 0.05rem;
+}
+.header>span:nth-child(2)>span i{
+	font-style: normal;
+	color:#FFF;
+	font-size: 16px;
+	margin:0 0 0 0.16rem;
+	line-height: 1.1rem;
+}
+.header>span:nth-child(2)>span:nth-child(3)>span{
+	padding-top: 0.05rem;
+	display: block;
+	float:left;
+}
+
+
+
+
