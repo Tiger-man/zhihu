@@ -1,0 +1,16 @@
+CSS3选择器    
+
+document.querySelector
+
+
+DOMContentLoaded 与                       load
+页面结构加载完成                      页面资源加载完成   内容+图片
+
+
+给body html添加子节点
+	
+	document.body
+
+	document.html
+
+	 
