@@ -1,0 +1,51 @@
+1.新建仓库
+2.克隆仓库
+3.修改
+4.上传
+仓库地址    git  clone   
+
+查看分支    git  branch   
+
+创建分支   	git	 branch  gh-pages   
+						  [分支]
+
+切换分支	 git checkout	分支名    
+
+
+查看有哪些修改(状态)					git status
+
+选中所有文件       						git add  .    
+
+	选中指定文件							git add index.html
+
+说明(加引号)       						git commit -m "注释文字"  
+
+命令行提交到服务器    	   						git push
+				
+	提交到指定分支(若不为master分支，可忽略不写origin 分支)	git push origin   分支
+
+从服务器同步最新文件					git pull 
+										
+										git pull origin gh-pages
+
+
+
+git仓库:
+
+	分为3个区      工作区      暂存盘       仓库
+
+
+合并分支
+	
+	用当前分支   合并指定名称分支
+
+	git merge   分支名
+
+删除分支
+
+	git branch -d 分支名
+
+
+查看提交
+
+	git log
